@@ -2,33 +2,12 @@ header.header
 	nav.navbar.navbar-default.navbar-static-top
 		.container
 			.navbar-header
-				button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-					span.sr-only Toggle navigation
-					span.icon-bar
-					span.icon-bar
-					span.icon-bar
-				a.navbar-brand(href='/') App Name
-			#navbar.navbar-collapse.collapse
-				ul.nav.navbar-nav
-					li(class=(title == 'Home') ? 'active' : null)
-						a(href='/') Home
-					li(class=(title == 'About') ? 'active' : null)
-						a(href='/about') About
-				ul.nav.navbar-nav.navbar-right
-					if user
-						li.dropdown
-							a.navbar-avatar.dropdown-toggle(href='#', data-toggle='dropdown')
-								span #{user.name || user.email} &nbsp;
-								i.caret
-							ul.dropdown-menu
-								li
-									a(href='/profile') Profile
-								li.divider(role='separator')
-								li
-									a(href='/logout') Logout
-					else
-						li(class=(title == 'Log in') ? 'active' : null)
-							a(href='/login') Log-in
-						li(class=(title == 'Register') ? 'active' : null)
-							a(href='/register') Register
-	//- /.nav-collapse
+				ul.nav
+					li.nav-item
+						a.nav-link.active(href="#") Active
+					li.nav-item
+					a.nav-link(href="#") Link
+					</li>
+					li.nav-item
+					a.nav-link(href="#") Link
+					</li>

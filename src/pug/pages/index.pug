@@ -1,4 +1,9 @@
 extends ./../layouts/_basic.pug
 
-block  variables
-	- const $title = Главная;
+include ./../mixins/_description.pug
+
+block variables
+	- const title = "Главная";
+
+block content
+	+descr("Hello", "hay")
