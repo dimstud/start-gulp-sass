@@ -1,13 +1,8 @@
 header.header
-	nav.navbar.navbar-default.navbar-static-top
-		.container
-			.navbar-header
-				ul.nav
-					li.nav-item
-						a.nav-link.active(href="#") Active
-					li.nav-item
-					a.nav-link(href="#") Link
-					</li>
-					li.nav-item
-					a.nav-link(href="#") Link
-					</li>
+	.container
+		nav.nav
+			ul.menu
+				li.menu__item( class=(title == 'Главная') ? 'active' : null)
+					a.menu__link(href='/') Home
+				li( class=(menu__item, title == 'Каталог') ? 'active' : null)
+					a.menu__link(href='/about') About
